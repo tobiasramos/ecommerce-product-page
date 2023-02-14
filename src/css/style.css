@@ -171,8 +171,19 @@ body {
         display: block;
     }
 
-    .buttons .buttonsPlusMinus {
-        margin: auto auto;
-        margin-bottom: 5px;
+    .buttons .buttonsPlusMinus,
+    .card .buttonAdd {
+      width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card .description {
+        width: 350px;
+    }
+
+    .card .description .descriptionTennis {
+        font-size: 12px;
     }
 }
