@@ -168,11 +168,10 @@ body {
 
 @media (max-width: 540px) {
     .card .images .imgShowcase {
-        border: 1px solid red;
-        display: flex;
-        justify-content: center;
-        width: 290px;
+        width: 375px;
         height: 230px;
+        margin-right: 130px;
+        border-radius: 0;
     }
 
     .card .images .imgSmall {
