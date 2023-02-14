@@ -167,6 +167,18 @@ body {
 }
 
 @media (max-width: 540px) {
+    .card .images .imgShowcase {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        width: 290px;
+        height: 230px;
+    }
+
+    .card .images .imgSmall {
+        display: none;
+    }
+
     .card .description .buttons {
         display: block;
     }
