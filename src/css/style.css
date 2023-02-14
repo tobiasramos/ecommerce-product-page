@@ -169,7 +169,7 @@ body {
 @media (max-width: 540px) {
     .card .images .imgShowcase {
         width: 375px;
-        height: 230px;
+        height: 280px;
         margin-right: 130px;
         border-radius: 0;
     }
