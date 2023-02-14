@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/header.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class='logo'>sneaker</h1>
+
+        <nav>
+            <input type='checkbox' id='menu-hamburguer' />
+
+            <label for='menu-hamburguer'>
+                <div class='menu'>
+                    <span class='hamburguer'></span>
+                </div>
+            </label>
+
+            <ul class='list'>
+                <a href="#">
+                    <li>Coleções</li>
+                </a>
+                <a href="#">
+                    <li>Homens</li>
+                </a>
+                <a href="#">
+                    <li>Mulheres</li>
+                </a>
+                <a href="#">
+                    <li>Sobre</li>
+                </a>
+                <a href="#">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </nav>
+        <div class='details'>
+            <img class="summary" src="src/images/icon-cart.svg" alt="Botão de resumo de compras">
+            <img src="src/images/image-avatar.png" alt='Foto do perfil' />
+            <div id="qtdPurchase"></div>
+            <div id="summaryPurchase"></div>
+        </div>
+    </header>
+
+    <div class="card">
+        <div class="images">
+            <img id="imgShowcase" class='imgShowcase' src="src/images/image-product-1.jpg" alt="">
+            <div>
+                <img onclick="product1()" class='imgSmall' src="src/images/image-product-1-thumbnail.jpg" alt='Imagem um' />
+
+                <img onclick="product2()" class='imgSmall' src="src/images/image-product-2-thumbnail.jpg"
+                    alt='Imagem dois' />
+
+                <img onclick="product3()" class='imgSmall' src="src/images/image-product-3-thumbnail.jpg"
+                    alt='Imagem três' />
+
+                <img onclick="product4()" class='imgSmall' src="src/images/image-product-4-thumbnail.jpg"
+                    alt='Imagem quatro' />
+            </div>
+
+        </div>
+
+        <div class="description">
+            <h4>SNEAKER COMPANY</h4>
+            <h3>Tênis de edição limitada de outono</h3>
+            <p class='descriptionTennis'>Esses tênis de perfil baixo são o seu campanion perfeito para
+                roupas casuais. Apresentando uma sola externa de borracha durável,
+                eles suportam tudo o que o clima pode oferecer.
+            </p>
+            <div class='price'>
+                <p class='priceCurrent'><strong>R$125,00</strong><span>50%</span></p>
+                <p class='priceOld'>R$250,00</p>
+            </div>
+            <div class='buttons'>
+                <div class="buttonsPlusMinus">
+                    <img class="minus" src="src/images/icon-minus.svg" alt='Botão de diminuir a quantidade de ténis' />
+
+                    <div id='qtd'>0</div>
+
+                    <img class="plus" src="src/images/icon-plus.svg"
+                        alt='Botão de aumentar a quantidade de ténis'></img>
+
+                </div>
+
+                <button class="buttonAdd">
+                    <img src="src/images/icon-cart.svg" alt="Icone de dicionar">
+                    <span>Adicionar ao carrinho</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/index.js"></script>
+
+</body>
+
+</html>

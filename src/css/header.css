@@ -1,0 +1,231 @@
+.header {
+    display: flex;
+    position: relative;
+    width: 82vw;
+    margin: 10px auto;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.header .logo {
+    margin-right: 50px;
+    font-weight: 800;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    width: 850px;
+    margin-left: 45px;
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.header ul li {
+    display: flex;
+    margin-right: 40px;
+}
+
+.header ul li:hover {
+    border-bottom: 1px solid hsl(26, 100%, 55%);
+    transition: 0.5s;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.details {
+    display: flex;
+    position: relative;
+}
+
+.num {
+    display: none;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -97px;
+    border-radius: 20px;
+    padding: 2px;
+    background-color: hsl(26, 100%, 55%);
+}
+
+.details .summary {
+    cursor: pointer;
+    margin-right: 35px;
+}
+
+.details img {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.cardCompra {
+    display: none;
+    position: absolute;
+    width: 215px;
+    height: 130px;
+    margin-top: 60px;
+    margin-left: -180px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: black 5px 5px 10px;
+    background-color: #fff;
+}
+
+.cardCompra .title {
+    border-bottom: 1px solid #000;
+}
+
+.cardCompra .description {
+    margin-top: 15px;
+}
+
+.cardCompra .summaryBuy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12.5px;
+}
+
+.cardCompra button {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin: 5px auto;
+    width: 100%;
+    height: 20px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(26, 100%, 55%);
+}
+
+.aparecer {
+    display: block;
+}
+
+
+/*----- RESPONSIVE -----*/
+.header .menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+}
+
+.header .hamburguer {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 2px;
+    top: 18px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+    background-color: #000;
+}
+
+.header .hamburguer:before,
+.header .hamburguer:after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: 0.2s ease-in-out;
+    background-color: #000;
+}
+
+.header .hamburguer:before {
+    top: 10px;
+}
+
+.header .hamburguer:after {
+    bottom: 10px;
+}
+
+.header input {
+    display: none;
+}
+
+.header input:checked~label .hamburguer {
+    top: -290px;
+    left: -5px;
+    transform: rotate(45deg);
+}
+
+.header input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media (max-width: 970px) {
+    .header ul li {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 870px) {
+    .header .logo {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        width: 95vw;
+        border-bottom: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .logo {
+        margin-left: 60px;
+    }
+
+    .header .menu {
+        display: block;
+    }
+
+    .header nav ul {
+        display: none;
+    }
+
+    .header input:checked~ul {
+        display: block;
+    }
+
+    .header input:checked~label {
+        width: 0px;
+    }
+
+    .header nav {
+        position: absolute;
+        top: 8px;
+        left: -50px;
+        z-index: 1;
+    }
+
+    .header nav ul {
+        width: 120px;
+        height: 100vh;
+        padding: 10px;
+        box-shadow: 5px 5px #000;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .header nav ul li {
+        margin-left: -5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+}
