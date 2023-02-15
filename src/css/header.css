@@ -94,12 +94,13 @@
 
 .cardCompra button {
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     margin: 5px auto;
     width: 100%;
     height: 20px;
     border: none;
+    border-radius: 10px;
     color: hsl(0, 0%, 100%);
     background-color: hsl(26, 100%, 55%);
 }
@@ -228,11 +229,26 @@
         font-size: 16px;
     }
 
+    .cardCompra button {
+        height: 40px;
+    }
+
 }
 
 @media (max-width: 500px) {
     .header nav {
         width: 60px;
-        
+    }
+
+    .cardCompra {
+        margin-top: 100px;
+        margin-left: -350px;
+        width: 290px;
+        height: 170px;
+    }
+
+    .cardCompra .summaryBuy {
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 }
