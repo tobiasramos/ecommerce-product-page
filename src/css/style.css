@@ -173,7 +173,7 @@ body {
 
 @media (max-width: 540px) {
     .card .images .imgShowcase {
-        width: 100%;
+        width: 98%;
         height: 300px;
         margin-right: 130px;
         border-radius: 0;
