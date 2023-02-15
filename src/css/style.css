@@ -178,6 +178,12 @@ body {
         border-radius: 0;
     }
 
+    .card .images .arrow {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+    }
+
     .card .images .imgSmall {
         display: none;
     }
