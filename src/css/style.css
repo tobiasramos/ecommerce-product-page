@@ -31,9 +31,12 @@ body {
     display: none;
     position: absolute;
     cursor: pointer;
+    margin-top: 140px;
 }
-.card .images .arrowBack {
 
+.card .images .arrowBack {
+    left: 0;
+    transform: rotate(180deg);
 }
 
 .card .images .arrowNext {
