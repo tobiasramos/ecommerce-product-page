@@ -16,8 +16,28 @@ body {
     width: 500px;
 }
 
+.images .carousel {
+    display: flex;
+    height: 420px;
+    position: relative;
+    transition: 0.5 ease-in-out;
+}
+
+.card .images .carousel .slide {
+    position: absolute;
+}
+
 .card .images .arrow {
     display: none;
+    position: absolute;
+    cursor: pointer;
+}
+.card .images .arrowBack {
+
+}
+
+.card .images .arrowNext {
+    right: 0;
 }
 
 .images .imgShowcase {
@@ -25,6 +45,9 @@ body {
     height: 430px;
 }
 
+.images .imgSmall-container {
+    margin-left: 5px;
+}
 
 .images .imgSmall {
     width: 110px;
@@ -181,8 +204,6 @@ body {
 
     .card .images .arrow {
         display: block;
-        position: absolute;
-        cursor: pointer;
     }
 
     .card .images .imgSmall {
