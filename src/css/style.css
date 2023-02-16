@@ -25,6 +25,11 @@ body {
 
 .card .images .carousel .slide {
     position: absolute;
+    opacity: 0;
+}
+
+.on {
+    opacity: 1;
 }
 
 .card .images .arrow {
