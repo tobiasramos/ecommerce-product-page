@@ -205,7 +205,7 @@ body {
     }
 
     .card .images .imgShowcase {
-      
+      width: 88%;
         height: 300px;
         margin-right: 130px;
         border-radius: 0;
