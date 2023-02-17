@@ -17,20 +17,17 @@ body {
 }
 
 .images .carousel {
-    display: flex;
-    height: 420px;
-    position: relative;
-    transition: 0.5 ease-in-out;
+    margin-top: -40px;
 }
 
-.card .images .carousel .slide {
-    position: absolute;
-    opacity: 0;
+.images .carousel a {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: black;
 }
 
-.on {
-    opacity: 1;
-}
 
 .card .images .arrow {
     display: none;
@@ -203,8 +200,12 @@ body {
 }
 
 @media (max-width: 540px) {
+    .card .images {
+        height: 310px;
+    }
+
     .card .images .imgShowcase {
-        width: 88%;
+      
         height: 300px;
         margin-right: 130px;
         border-radius: 0;
