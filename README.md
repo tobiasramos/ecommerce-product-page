@@ -6,3 +6,7 @@ Single page de um ecommerce. Trata-se de uma page onde o usuário está logado n
 - CSS
 - JAVASCRIPT
 - JQUERY
+
+## Projeto em execução
+
+[<img src="./tela.gif" alt="Tela do site">](https://tobiasramos.github.io/ecommerce-product-page/)
